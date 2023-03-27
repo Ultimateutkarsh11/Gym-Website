@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: fantasy;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(Images/background.jpg);
+        background-size: cover;     /*<--- To completely fit the image into background */
+        /* background-size: 100%;   <--- To completely fit the image into background (Alternate method) */
+        overflow-y: hidden; /* <----- Hide vertical scrollbar */
+        /* overflow-x: hidden; <----- Hide horizontal scrollbar */
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 14px;
+        border-radius: 12px;
+    }
+
+    .center {
+        border: 2px solid yellow;
+        /* To center align an element we need to set these 3 properties: */
+        display: block;      /* <--- display: block; */
+        width: 32%;         /* <--- set the width */
+        margin: 26px auto; /*<--- set margin as auto in left/right part, In top/bottom set margin manually*/
+        border-radius: 30px;
+    }
+
+    .right {
+        /* border: 2px solid blue; */
+        display: inline-block;
+        position: absolute;
+        top: 22px;
+        left: 1410px;
+        border-radius: 17px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .list {
+        display: inline-block;
+    }
+
+    .list a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+        font-size: 16px;
+    }
+
+    .list a:hover,
+    .list a.active {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .left img {
+        position: relative;
+        width: 71px;
+        /* filter: invert(100%);  <---- Invert function will change the color of an image to black, if previously white and to white if previously black. */
+        border-radius: 75px;
+        left: 30px;
+    }
+
+    .left p {
+        line-height: 0px;
+        margin-left: 10px;
+        font-family: 'Playball', cursive;
+        font-size: 21px;
+    }
+
+    .btn {
+        /*Normal Button properties*/
+        margin: 22px -4px;
+        padding: 8px 11px;
+        background-color: black;
+        color: white;
+        /*<---- Color means text color*/
+        border: 1px solid white;
+        border-radius: 20px;
+        font-size: 13px;
+        font-family: 'PT Serif', serif;
+    }
+
+    .btn:hover {
+        /*Hover karne par Button ki properties*/
+        background-color: rgba(158, 169, 169, 0.4);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .container {
+        border: 2px solid #a97834;
+        border-radius: 27px;
+        margin: 122px 191px;
+        padding: 49px 161px;
+        width: 163px;
+        font-family: 'Alkatra', cursive;
+    }
+
+    .form-group input {
+        border: 2px solid black;
+        border-radius: 9px;
+        display: block;
+        margin: 7px auto;
+        width: 180%;
+        padding: 5px;
+        left: -36%;
+        position: relative;
+        font-family: 'Ubuntu', sans-serif;
+        background-color: #b3c1c1;
+    }
+
+    .container button {
+        text-align: center;
+        width: 184%;
+        left: -52px;
+        position: relative;
+
+    }
+
+    .container h3 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- For logo and name -->
+        <div class="left">
+            <img src="Images/logo3.jpg" alt="">
+            <p>Utkarsh Fitness</p>
+        </div>
+
+        <!-- For navbar-->
+        <div class="center">
+            <ul class="list">
+                <li class="list"><a href="">Home</a></li>
+                <li class="list"><a href="">About us</a></li>
+                <li class="list"><a href="">Our team</a></li>
+                <li class="list"><a href="">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- For buttons -->
+        <div class="right">
+            <!-- <button class="btn">Call Us!</button> -->
+            <button class="btn">Night Mode</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>Join the best gym of North Delhi!</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone no.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
